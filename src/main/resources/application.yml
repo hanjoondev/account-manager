@@ -23,16 +23,6 @@ spring:
     properties:
       hibernate:
         '[format_sql]': true
-logging:
-  file.name: logs/application.log
-  level:
-    '[org.hibernate]':
-      SQL: DEBUG
-      '[type.descriptor.sql.BasicBinder]': TRACE
-      '[resource.transaction]': DEBUG
-    '[org.springframework.transaction.interceptor]': TRACE
-    '[org.springframework.orm.jpa.JpaTransactionManager]': DEBUG
-    '[org.springframework.jdbc.datasource.DataSourceTransactionManager]': DEBUG
 springdoc:
   swagger-ui:
     enabled: true
